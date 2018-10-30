@@ -17,7 +17,7 @@
 
 
 package org.apache.cordova.geolocation;
-
+import org.elastos.trinity.dapprt.TrinityPlugin;
 import android.content.pm.PackageManager;
 import android.Manifest;
 import android.os.Build;
@@ -33,7 +33,7 @@ import org.json.JSONException;
 
 import javax.security.auth.callback.Callback;
 
-public class Geolocation extends CordovaPlugin {
+public class Geolocation extends TrinityPlugin {
 
     String TAG = "GeolocationPlugin";
     CallbackContext context;
