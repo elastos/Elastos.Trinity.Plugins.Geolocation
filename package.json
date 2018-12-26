@@ -1,5 +1,5 @@
 {
-  "name": "cordova-plugin-geolocation",
+  "name": "elastos-trinity-plugins-geolocation",
   "version": "4.0.2-dev",
   "description": "Cordova Geolocation Plugin",
   "cordova": {
