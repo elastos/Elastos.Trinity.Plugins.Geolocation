@@ -20,6 +20,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import <Cordova/CDVPlugin.h>
+#import "TrinityPlugin.h"
 
 enum CDVLocationStatus {
     PERMISSIONDENIED = 1,
@@ -43,7 +44,7 @@ typedef NSUInteger CDVLocationStatus;
 
 @end
 
-@interface CDVLocation : CDVPlugin <CLLocationManagerDelegate>{
+@interface CDVLocation : TrinityPlugin <CLLocationManagerDelegate>{
     @private BOOL __locationStarted;
     @private BOOL __highAccuracyEnabled;
     CDVLocationData* locationData;
