@@ -23,9 +23,9 @@ description: Access GPS data.
 
 |AppVeyor|Travis CI|
 |:-:|:-:|
-|[![Build status](https://ci.appveyor.com/api/projects/status/github/apache/cordova-plugin-geolocation?branch=master)](https://ci.appveyor.com/project/ApacheSoftwareFoundation/cordova-plugin-geolocation)|[![Build Status](https://travis-ci.org/apache/cordova-plugin-geolocation.svg?branch=master)](https://travis-ci.org/apache/cordova-plugin-geolocation)|
+|[![Build status](https://ci.appveyor.com/api/projects/status/github/apache/elastos-trinity-plugins-geolocation?branch=master)](https://ci.appveyor.com/project/ApacheSoftwareFoundation/elastos-trinity-plugins-geolocation)|[![Build Status](https://travis-ci.org/apache/elastos-trinity-plugins-geolocation.svg?branch=master)](https://travis-ci.org/apache/elastos-trinity-plugins-geolocation)|
 
-# cordova-plugin-geolocation
+# elastos-trinity-plugins-geolocation
 
 This plugin provides information about the device's location, such as
 latitude and longitude.
@@ -76,7 +76,7 @@ are not available until after the `deviceready` event.
 
 This requires cordova 5.0+ ( current stable 1.0.0 )
 
-    cordova plugin add cordova-plugin-geolocation
+    cordova plugin add elastos-trinity-plugins-geolocation
 
 Older versions of cordova can still install via the deprecated id ( stale 0.3.12 )
 
@@ -84,7 +84,7 @@ Older versions of cordova can still install via the deprecated id ( stale 0.3.12
 
 It is also possible to install via repo url directly ( unstable )
 
-    cordova plugin add https://github.com/apache/cordova-plugin-geolocation.git
+    cordova plugin add https://github.com/apache/elastos-trinity-plugins-geolocation.git
 
 ## Supported Platforms
 
