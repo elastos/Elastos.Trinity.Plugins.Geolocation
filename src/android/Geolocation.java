@@ -17,7 +17,7 @@
 
 
 package org.apache.cordova.geolocation;
-import org.elastos.trinity.dapprt.TrinityPlugin;
+import org.elastos.trinity.runtime.TrinityPlugin;
 import android.content.pm.PackageManager;
 import android.Manifest;
 import android.os.Build;
