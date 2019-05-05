@@ -21,10 +21,6 @@ description: Access GPS data.
 #         under the License.
 -->
 
-|AppVeyor|Travis CI|
-|:-:|:-:|
-|[![Build status](https://ci.appveyor.com/api/projects/status/github/apache/elastos-trinity-plugins-geolocation?branch=master)](https://ci.appveyor.com/project/ApacheSoftwareFoundation/elastos-trinity-plugins-geolocation)|[![Build Status](https://travis-ci.org/apache/elastos-trinity-plugins-geolocation.svg?branch=master)](https://travis-ci.org/apache/elastos-trinity-plugins-geolocation)|
-
 # elastos-trinity-plugins-geolocation
 
 This plugin provides information about the device's location, such as
@@ -74,15 +70,12 @@ are not available until after the `deviceready` event.
 
 ## Installation
 
-    cordova plugin add https://github.com/elastos/Elastos.Trinity.Plugins.Geolocation
-
     The plugins field of dapp manifest.json adds Geolocation values, such as "plugins": ["XXXX", "Geolocation", "XXXX"]
 
 ## Supported Platforms
 
 - Android
 - iOS
-- Windows
 
 ## Methods
 
@@ -147,12 +140,12 @@ error, the `geolocationError` callback is passed a
 ```
 
 ### iOS Quirks
- 
+
  Since iOS 10 it's mandatory to provide an usage description in the `info.plist` if trying to access privacy-sensitive data. When the system prompts the user to allow access, this usage description string will displayed as part of the permission dialog box, but if you didn't provide the usage description, the app will crash before showing the dialog. Also, Apple will reject apps that access private data but don't provide an usage description.
 
  This plugins requires the following usage description:
 
- * `NSLocationWhenInUseUsageDescription` describes the reason that the app accesses the user's location. 
+ * `NSLocationWhenInUseUsageDescription` describes the reason that the app accesses the user's location.
 
  To add this entry into the `info.plist`, you can use the `edit-config` tag in the `config.xml` like this:
 
@@ -161,7 +154,7 @@ error, the `geolocationError` callback is passed a
     <string>need location access to find things nearby</string>
 </edit-config>
 ```
- 
+
 ### Android Quirks
 
 If Geolocation service is turned off the `onError` callback is invoked after `timeout` interval (if specified).
